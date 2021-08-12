@@ -81,7 +81,7 @@ formatters = {"plain": plain,
               "unordered-list": unordered_list,
               "ordered-list": ordered_list}
 # Instead of using bunch of similar elifs dos use a switcher instead
-# formats = ['plain', 'bold', 'italic', 'header', 'link', 'inline-code', 'ordered-list', 'unordered-list', 'new-line']
+
 while True:
     _input = input('Choose a formatter: ')
     if _input == '!done':
@@ -91,7 +91,7 @@ while True:
         print('Available formatters: plain bold italic header link inline-code ordered-list unordered-list new-line')
         print('Special commands: !help !done')
     elif _input in formatters:
-        whole_text.append(formatters[_input]())  # Instead of use function actions use this instead
+        whole_text.append(formatters[_input]())  # Instead of use function actions use this
         print(*whole_text, sep='')
     else:
         print('Unknown formatting type or command')
