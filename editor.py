@@ -7,7 +7,7 @@ whole_text = []
 
 
 def get_text():
-    return input('Text:')  # use this function instead of writing input('Text:') in every function
+    return input('Text:')
 
 
 def plain():
@@ -80,7 +80,6 @@ formatters = {"plain": plain,
               "header": header,
               "unordered-list": unordered_list,
               "ordered-list": ordered_list}
-# Instead of using bunch of similar elifs dos use a switcher instead
 
 while True:
     _input = input('Choose a formatter: ')
